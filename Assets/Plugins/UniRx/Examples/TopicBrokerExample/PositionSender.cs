@@ -10,6 +10,12 @@ namespace UniRx.Examples
 
         private Vector3 lastPosition;
 
+        private void Start()
+        {
+            lastPosition = transform.position;
+            TopicBroker.Default.Publish(topic, lastPosition);
+        }
+
         private void Update()
         {
             if (transform.position != lastPosition)
