@@ -129,3 +129,4 @@ Backup*/
 UpgradeLog*.XML
 Assets/WSATestCertificate.pfx
 .vs/
+.vscode/
